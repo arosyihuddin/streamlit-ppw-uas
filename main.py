@@ -37,9 +37,9 @@ selected = option_menu(
 
 if selected == "Dataset Information":
     st.write("Dataset Asli")
-    st.dataframe(pd.read_csv('resources/Data Berita CNBC.csv'))
+    st.dataframe(pd.read_csv('resources/Data Berita CNBC.csv'), use_container_width=True)
     st.write("Dataset Hasil Reduksi Dimensi")
-    st.dataframe(pd.read_csv('resources/reduksi dimensi.csv'))
+    st.dataframe(pd.read_csv('resources/reduksi dimensi.csv'), use_container_width=True)
 
 
 elif selected == "Klasifikasi":
