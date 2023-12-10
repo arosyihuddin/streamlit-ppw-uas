@@ -54,4 +54,4 @@ elif selected == "Klasifikasi":
         
 elif selected == "History Uji Coba":
     st.write("Hasil Uji Coba")
-    st.dataframe(pd.read_csv('resources/history.csv'))
+    st.dataframe(pd.read_csv('resources/history.csv'), use_container_width=True)
